@@ -52,7 +52,7 @@ outputs:
       run:
         - python >=${{ python_min }}
         - numpy >=${{ numpy_min }}, <${{ numpy_max }}
-        - numpy-typing-compat >=20260602.${{ numpy_min }}, <20260603
+        - numpy-typing-compat >=20260602.${{ numpy_min }}, <20260603.${{ numpy_min }}
         - ${{ pin_subpackage('optype', exact=True) }}
     tests:
       - python:
